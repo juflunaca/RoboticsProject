@@ -19,20 +19,25 @@ Para la solución del problema planteado debimos diseñar un gripper que se pudi
 
 El proceso de ensamble más específicamente consistió en agarra las piezas con ayuda de un Venturi para generar vacío y que la ventosa en la herramienta pudiera sujetar las piezas en un orden ya estipulado e ir llevando las a su posición de ensamble pasando atreves de los pasadores. 
 ## Gripper
-Como se puede ver en las imagenes, el gripper tiene un mecanismo de funcionamiento sencillo, donde al halar una pieza en forma de T, el pin central hara que las pinzas se cierren para poder sujetar algo entre las puntas. Los planos de esta herramienta pueden encontrarse en el pdf *PlanosProyecto.pdf* dentro del directorio *Planos*.
-![Gripper1](Images/GRIPPER1.jpg)
-![Gripper2](Images/GRIPPER2.jpg)
-![Gripper3](Images/GRIPPER3.jpeg)
+Como se puede ver en las imagenes, el gripper tiene un mecanismo de funcionamiento sencillo, donde al halar una pieza en forma de T, el pin central hara que las pinzas se cierren para poder sujetar algo entre las puntas. Los planos de esta herramienta pueden encontrarse en el pdf *PlanosProyecto.pdf* dentro del directorio *Planos*. 
+
+<p align="center">
+    <img src="Images/GRIPPER1.jpg" alt="Gripper1" width="400"/>
+    <img src="Images/GRIPPER3.jpeg" alt="Gripper2" width="400"/>
+    <img src="Images/GRIPPER4.jpg" alt="Gripper3" width="500"/>
+</p>
 
 ## Herramienta
-Para sujetar las piezas se diseño una herramienta que estuviera a 45° con respecto al eje del plato porta herramientas para evitar singularidades y con una ventosa en su punta. También se pensó en diseñarla de la forma mas sencilla posible para que su montura fuera fácil de hacer. Como observación adicional, el diseño quedo un poco endeble por ello se debieron hacer unos refuerzos.
-[Fotos de la herramienta]
-[link de los planos de la herramienta]
+Para sujetar las piezas se diseño una herramienta que estuviera a 45° con respecto al eje del plato porta herramientas para evitar singularidades y con una ventosa en su punta. También se pensó en diseñarla de la forma mas sencilla posible para que su montura fuera fácil de hacer. Como observación adicional, el diseño quedo un poco endeble por ello se debieron hacer unos refuerzos. Los planos de esta tambien pueden encontrarse en el pdf *PlanosProyecto.pdf* dentro del directorio *Planos*.
+
+<p align="center">
+    <img src="Images/HERRAMIENTA1.jpeg" alt="Herramienta1" width="500"/>
+</p>
+
 ## Robot Studio
 Para hacer la programación y creación de las trayectorias del IRB 140 se utilizó el programa RobotStudio que nos permite crear todos los puntos y trayectorias desde un ambiente simulado.
 Para crear las trayectorias y los “targets” se importo los modelos creados de la distribución de las piezas en la superficie de descanso y como debía quedar el gripper ensamblado junto a la herramienta con la ventosa incluida.
 Como debíamos interactuar con salidas y entradas digitales para poder manipular la electroválvula 2-5 que suministraba aire al Venturi y ventosa se simularon con ayuda del modulo I/O del robot studio para poder observar que si se estuvieran manejando de la forma correcta.
-[inserte fotos del robotStudio]
 ## RAPID
 En el código de rapid, que se puede encontrar en la carpeta RAPID dentro de la carpeta del proyecto llamada *Prouwu*, se puede ver como se llaman todas las trayectorias utilizadas nombradas por medio de las piezas que se van a mover en cada momento adicionando las trayectorias llamadas HOME que llevan el robot a una configuración de [0 0 0 0 0 10] para iniciar cada programa en ella, normalmente se dejarían todas las articulaciones en 0 pero por problemas de singularidad se decisión dejar la sexta articulación en 10, una trayectoria de acercamiento que como su nombre lo dice lleva el robot a una posición de acercamiento para iniciar el trayecto de las piezas. 
 
