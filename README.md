@@ -38,5 +38,7 @@ En el código de rapid, que se puede encontrar en la carpeta RAPID dentro de la 
 
 Para el manejo de la electroválvula se utilizó una salida digital llamada DO_01 que al activarse hacían que la ventosa hiciera succión y una DO_02 que la desactivaba. Como forma de prevención se le puso un WaitTime antes de cada activación de la válvula para evitar que llegara a activar o desactivar la succión sin estar en la posición deseada, también se activaba cada una de las salidas por solo 0.5 segundos para no mantener siempre energizada esa bobina de la válvula. Como una forma preventiva y para hacer arreglos durante el montaje y posicionamiento de las piezas se puso un WaitDI para que se necesite presionar un botón identificado con la entrada DI_01 que funciona como verificación que el montaje y posición están bien, este mismo botón se utiliza para iniciar todo el proceso desde que está en HOME. Para finalizar se utilizo una tercera señal digital identificada como DO_03 que corresponde a un Led que se prende al finalizar el proceso y regresar a HOME nuevamente.
 ## Video
-Mk hagan ustedes el video. Ya tienen el video del “ensamble” hay que ponerle los psadores al gripper y mostrar que si cierra y agarra algo, yo les paso la simulación.
+
+En la carpeta Videos se encuentran algunas pruebas del ensamblaje del gripper realizadas en el laboratorio. En el siguiente enlace se encuentran el video final  del gripper en funcionamiento y el video del ensamble del gripper (y algunas pruebas).
+https://drive.google.com/drive/folders/1wgBgLFiADfSCD0DUbFMjX3ZrhTEknlY7?usp=share_link
   
