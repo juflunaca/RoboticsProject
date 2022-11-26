@@ -20,7 +20,7 @@ Para la solución del problema planteado debimos diseñar un gripper que se pudi
 El proceso de ensamble más específicamente consistió en agarra las piezas con ayuda de un Venturi para generar vacío y que la ventosa en la herramienta pudiera sujetar las piezas en un orden ya estipulado e ir llevando las a su posición de ensamble pasando atreves de los pasadores. 
 ## Gripper
 Como se puede ver en las imagenes, el gripper tiene un mecanismo de funcionamiento sencillo, donde al halar una pieza en forma de T, el pin central hara que las pinzas se cierren para poder sujetar algo entre las puntas. Los planos de esta herramienta pueden encontrarse en el pdf *PlanosProyecto.pdf* dentro del directorio *Planos*.
-<p align="center"><img src="./Images/GRIPPER11.jpg" width=60%></p>
+<p align="center"><img src="./Images/GRIPPER1.jpg" width=60%></p>
 <p align="center"><img src="./Images/GRIPPER2.jpg" width=60%></p>
 <p align="center"><img src="./Images/GRIPPER3.jpeg" width=60%></p>
 
