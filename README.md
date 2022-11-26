@@ -1,5 +1,19 @@
-# RoboticsProject
-Development of the final project for the robotics class, where we develop a pick and place routine for the assembly of a gripping claw.
+# Robótica - Proyecto Final
+
+### Por: Sebastian Campiño Figueroa, Julián Felipe Luna Castro y Diego Fernando Mejía Hernández
+
+Este repositorio contiene las memorias, programas, planos y la video presentación desarrollados como entregable del proyecto final de la materia robotica, donde se diseño una herramienta tipo gripper de multiples piezas que pueda ser ensamblada sobre los pines de una base plana, de forma que se desarrolle una rutina para el robot IRB140 que por medio de un actuador neumatico, diseñado tambien por nosotros, pueda tomar las piezas del gripper y ensamblarlo.
+
+## Requerimientos
+* Robot Studio versión 5 o superior
+* Hoja de datos del manipulador industrial IRB 140
+* Software CAD (OnShape y AutoDesk Inventor)
+* Manipuladores industriales ABB IRB 140
+* Controlador ABB IRC5
+* Herramienta tipo gripper a ser ensamblada
+* Herramienta neumatica para pick and place
+* Base plana para ensamblado de la herramienta tipo gripper (con pines y guias)
+
 ## Descripción de la solución creada.
 Para la solución del problema planteada debimos diseñar un gripper que se pudiera ensamblar por partes, para ello se diseñaron un total de 9 piezas que conformaron el gripper de tal manera que se pudiera poner una sobre otra y aun así fuera funcional. Para ensamblarlo se utilizó un manipulador robótico ABB IRB 140 que con ayuda de una herramienta entorno a una ventosa y la línea neumática del robot fuera capaz de sujetar las piezas desde una posición de descanso hasta una de ensamble que con ayuda de unos pasadores puestos sobre la superficie se pudiera ensamblar el gripper. 
 El proceso de ensamble más específicamente consistió en agarra las piezas con ayuda de un Venturi para generar vacío y que la ventosa en la herramienta pudiera sujetar las piezas en un orden ya estipulado e ir llevando las a su posición de ensamble pasando atreves de los pasadores.
