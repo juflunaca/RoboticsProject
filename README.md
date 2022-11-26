@@ -26,7 +26,8 @@ Como se puede ver en las imagenes, el gripper tiene un mecanismo de funcionamien
 
 ## Herramienta
 Para sujetar las piezas se diseño una herramienta que estuviera a 45° con respecto al eje del plato porta herramientas para evitar singularidades y con una ventosa en su punta. También se pensó en diseñarla de la forma mas sencilla posible para que su montura fuera fácil de hacer. Como observación adicional, el diseño quedo un poco endeble por ello se debieron hacer unos refuerzos.
-[Fotos de la herramienta]
+<p align="center"><img src="./Images/HERRAMIENTA1.jpeg" width=70%></p>
+<p align="center"><img src="./Images/HERRAMIENTA2.jpg" width=70%></p>
 [link de los planos de la herramienta]
 ## Robot Studio
 Para hacer la programación y creación de las trayectorias del IRB 140 se utilizó el programa RobotStudio que nos permite crear todos los puntos y trayectorias desde un ambiente simulado.
