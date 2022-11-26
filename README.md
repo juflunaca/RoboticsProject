@@ -41,7 +41,7 @@ Para crear las trayectorias y los “targets” se importo los modelos creados d
 Como debíamos interactuar con salidas y entradas digitales para poder manipular la electroválvula 2-5 que suministraba aire al Venturi y ventosa se simularon con ayuda del modulo I/O del robot studio para poder observar que si se estuvieran manejando de la forma correcta.
 
 <p align="center">
-    <img src="Images/ROBOTSTUDIO.jpg" alt="Robot Studio" width="500"/>
+    <img src="Images/ROBOTSTUDIO.jpg" alt="Robot Studio" width="800"/>
 </p>
 
 ## RAPID
