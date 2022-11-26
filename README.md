@@ -32,15 +32,20 @@ Para sujetar las piezas se diseño una herramienta que estuviera a 45° con resp
 
 <p align="center">
     <img src="Images/HERRAMIENTA1.jpeg" alt="Herramienta1" width="500"/>
-    <img src="Images/HERRAMIENTA2.jpeg" alt="Herramienta2" width="400"/>
+    <img src="Images/HERRAMIENTA2.jpg" alt="Herramienta2" width="400"/>
 </p>
 
 ## Robot Studio
 Para hacer la programación y creación de las trayectorias del IRB 140 se utilizó el programa RobotStudio que nos permite crear todos los puntos y trayectorias desde un ambiente simulado.
 Para crear las trayectorias y los “targets” se importo los modelos creados de la distribución de las piezas en la superficie de descanso y como debía quedar el gripper ensamblado junto a la herramienta con la ventosa incluida.
 Como debíamos interactuar con salidas y entradas digitales para poder manipular la electroválvula 2-5 que suministraba aire al Venturi y ventosa se simularon con ayuda del modulo I/O del robot studio para poder observar que si se estuvieran manejando de la forma correcta.
+
+<p align="center">
+    <img src="Images/ROBOTSTUDIO.jpg" alt="Robot Studio" width="500"/>
+</p>
+
 ## RAPID
-En el código de rapid, que se puede encontrar en la carpeta RAPID dentro de la carpeta del proyecto llamada *Prouwu*, se puede ver como se llaman todas las trayectorias utilizadas nombradas por medio de las piezas que se van a mover en cada momento adicionando las trayectorias llamadas HOME que llevan el robot a una configuración de [0 0 0 0 0 10] para iniciar cada programa en ella, normalmente se dejarían todas las articulaciones en 0 pero por problemas de singularidad se decisión dejar la sexta articulación en 10, una trayectoria de acercamiento que como su nombre lo dice lleva el robot a una posición de acercamiento para iniciar el trayecto de las piezas. 
+En el código de rapid, que se puede encontrar en la carpeta *RAPID* dentro de la carpeta del proyecto llamada *Prouwu*, se puede ver como se llaman todas las trayectorias utilizadas nombradas por medio de las piezas que se van a mover en cada momento adicionando las trayectorias llamadas HOME que llevan el robot a una configuración de [0 0 0 0 0 10] para iniciar cada programa en ella, normalmente se dejarían todas las articulaciones en 0 pero por problemas de singularidad se decisión dejar la sexta articulación en 10, una trayectoria de acercamiento que como su nombre lo dice lleva el robot a una posición de acercamiento para iniciar el trayecto de las piezas. 
 
 Para el manejo de la electroválvula se utilizó una salida digital llamada DO_01 que al activarse hacían que la ventosa hiciera succión y una DO_02 que la desactivaba. Como forma de prevención se le puso un WaitTime antes de cada activación de la válvula para evitar que llegara a activar o desactivar la succión sin estar en la posición deseada, también se activaba cada una de las salidas por solo 0.5 segundos para no mantener siempre energizada esa bobina de la válvula. Como una forma preventiva y para hacer arreglos durante el montaje y posicionamiento de las piezas se puso un WaitDI para que se necesite presionar un botón identificado con la entrada DI_01 que funciona como verificación que el montaje y posición están bien, este mismo botón se utiliza para iniciar todo el proceso desde que está en HOME. Para finalizar se utilizo una tercera señal digital identificada como DO_03 que corresponde a un Led que se prende al finalizar el proceso y regresar a HOME nuevamente.
 ## Video
