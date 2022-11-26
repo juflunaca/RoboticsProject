@@ -20,14 +20,14 @@ Para la solución del problema planteado debimos diseñar un gripper que se pudi
 El proceso de ensamble más específicamente consistió en agarra las piezas con ayuda de un Venturi para generar vacío y que la ventosa en la herramienta pudiera sujetar las piezas en un orden ya estipulado e ir llevando las a su posición de ensamble pasando atreves de los pasadores. 
 ## Gripper
 Como se puede ver en las imagenes, el gripper tiene un mecanismo de funcionamiento sencillo, donde al halar una pieza en forma de T, el pin central hara que las pinzas se cierren para poder sujetar algo entre las puntas. Los planos de esta herramienta pueden encontrarse en el pdf *PlanosProyecto.pdf* dentro del directorio *Planos*.
-![Gripper1](Images/GRIPPER1.jpg)
-![Gripper2](Images/GRIPPER2.jpg)
-![Gripper3](Images/GRIPPER3.jpeg)
+<p align="center"><img src="./Images/GRIPPER11.jpg" width=60%></p>
+<p align="center"><img src="./Images/GRIPPER2.jpg" width=60%></p>
+<p align="center"><img src="./Images/GRIPPER3.jpeg" width=60%></p>
 
 ## Herramienta
 Para sujetar las piezas se diseño una herramienta que estuviera a 45° con respecto al eje del plato porta herramientas para evitar singularidades y con una ventosa en su punta. También se pensó en diseñarla de la forma mas sencilla posible para que su montura fuera fácil de hacer. Como observación adicional, el diseño quedo un poco endeble por ello se debieron hacer unos refuerzos.
-<p align="center"><img src="./Images/HERRAMIENTA1.jpeg" width=70%></p>
-<p align="center"><img src="./Images/HERRAMIENTA2.jpg" width=70%></p>
+<p align="center"><img src="./Images/HERRAMIENTA1.jpeg" width=60%></p>
+<p align="center"><img src="./Images/HERRAMIENTA2.jpg" width=60%></p>
 [link de los planos de la herramienta]
 ## Robot Studio
 Para hacer la programación y creación de las trayectorias del IRB 140 se utilizó el programa RobotStudio que nos permite crear todos los puntos y trayectorias desde un ambiente simulado.
