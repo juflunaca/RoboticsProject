@@ -32,6 +32,7 @@ Para sujetar las piezas se diseño una herramienta que estuviera a 45° con resp
 
 <p align="center">
     <img src="Images/HERRAMIENTA1.jpeg" alt="Herramienta1" width="500"/>
+    <img src="Images/HERRAMIENTA2.jpeg" alt="Herramienta2" width="400"/>
 </p>
 
 ## Robot Studio
